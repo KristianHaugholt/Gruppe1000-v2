@@ -1,3 +1,22 @@
+@media screen and (min-width: 1024px){
+    .container{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
 .topp-del{
     width: 100%;
     height: 100px;
@@ -20,6 +39,17 @@
 }
 .container{
     margin-top: 30px;
-    padding-right: 20%;
-    padding-left: 20%;
+}
+.container img{
+    width: 100%;
+}
+
+.info-tabell{
+    width: 100%;
+}
+.info-tabell th{
+    width: 20%;
+}
+.info-tabell td{
+    border-top: 1px solid black;
 }
