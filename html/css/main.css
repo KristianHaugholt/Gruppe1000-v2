@@ -75,7 +75,6 @@
     display: inline-block;
     background-image: url(../images/search-icon.svg);
     background-size: cover;
-    background-color: yellow;
     height: 30px;
     width: 30px;
 }
