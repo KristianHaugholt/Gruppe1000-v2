@@ -45,6 +45,29 @@
 .sok{
     padding-right: 10px;
 }
+
+#sok-toggle{
+    display: none;
+}
+
+.sok-toggle-container{
+    display: block;
+    cursor: pointer;
+}
+
+.sok-icon{
+    display: inline-block;
+    background-image: url(../images/search-icon.svg);
+    background-size: cover;
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+}
+#sok-toggle:checked ~ input{
+    display: none;
+}
+
+
 .meny{
     flex-basis: 10%;
     flex-grow: 2;
@@ -63,6 +86,8 @@
 .info-tabell p{
     border-top: 1px solid black;
 }
+
+
 #pluss-toggle{
     display: none;
 }
@@ -75,8 +100,8 @@
 .pluss-icon{
     display: inline-block;
     background-color: yellow;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 #pluss-toggle:checked ~ p{
     display: inline-block;
