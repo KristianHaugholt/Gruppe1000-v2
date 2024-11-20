@@ -1,0 +1,173 @@
+@media screen and (min-width: 1024px){
+    .container{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .info-tabell{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .info-tabell{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+.container-2{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.container-2 p{
+    display: none;
+}
+.topp-del{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+.Sok-og-Meny{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    flex-basis: 30%;
+    flex-grow: 3;
+}
+.sok{
+    padding-right: 10px;
+}
+
+#sok-toggle{
+    display: none;
+}
+
+.sok-toggle-container{
+    display: block;
+    cursor: pointer;
+}
+.sok-bar{
+    display: none;
+}
+
+.sok-icon{
+    display: inline-block;
+    background-image: url(../images/search-icon.svg);
+    background-size: cover;
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+}
+
+#sok-toggle:checked ~ input{
+    display: inline;
+}
+
+
+.meny{
+    flex-basis: 10%;
+    flex-grow: 2;
+}
+.container{
+    margin-top: 30px;
+}
+.container img{
+    width: 100%;
+}
+
+.info-tabell{
+    display: grid;
+    gap: 10px 20px;
+}
+.info-tabell p{
+    border-top: 1px solid black;
+}
+
+
+#pluss-toggle{
+    display: none;
+}
+
+.pluss-toggle-container{
+    display: block;
+    cursor: pointer;
+}
+
+.pluss-icon{
+    display: inline-block;
+    background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+}
+#pluss-toggle:checked ~ p{
+    display: inline-block;
+}
+
+
+
+
+/*-------Footer grid-------*/
+footer {
+    background-color: rgb(0, 128, 128);
+}
+
+/*Removes dots from the list*/
+footer li {
+    list-style-type: none;
+    padding: 14px;
+}
+footer a {
+    color: black;
+}
+
+/*makes the div take the space to the left in the grid
+and lie next to the others*/
+.footer-left {
+    grid-column: 1/2;
+    grid-row: 1;
+
+    display: table-cell;
+}
+
+/*Forces the divs under eachother when the windows is less
+than 800px wide*/
+@media (min-width: 800px) {
+    /*makes the div take the space in the middle of the grid
+    and lie next to the others*/
+    .footer-middle {
+        grid-column: 2/3;
+        grid-row: 1;
+
+        display: table-cell;
+    }
+
+    /*makes the div take the space to the right in the grid
+    and lie next to the others*/
+    .footer-right {
+        grid-column: 3/4;
+        grid-row: 1;
+
+        display: table-cell;
+    }
+
+    /*Defines the footer grid */
+    footer {
+        display: grid;
+        grid-template-columns: minmax(200px, 20vw) minmax(200px, 20vw) minmax(200px, 20vw) auto;
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        border-spacing: 20px;
+    }
+}
+
+
