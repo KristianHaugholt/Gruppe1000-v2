@@ -33,6 +33,10 @@
     display: none;
 }
 
+.container-2 ul{
+    display: none;
+}
+
 .topp-del{
     width: 100%;
     height: 100px;
@@ -122,8 +126,11 @@
     height: 30px;
     width: 30px;
 }
-#pluss-toggle-1:checked + label + p{
-    display: inline-block;
+#pluss-toggle-1:checked + label + div > p{
+    display: block;
+}
+#pluss-toggle-1:checked + label + div > ul{
+    display: block;
 }
 #pluss-toggle-1:checked + label > div{
     background-color: aqua;
@@ -333,6 +340,7 @@ header {
 
 /* påvirker også burgermenyen*/
 .menu-toggle {
+    cursor: pointer;
     position: absolute; /* påvirker posisjon */
     right: 1.5rem;  /* påvirker hvor langt fra høyreside */
     top: 49%;
