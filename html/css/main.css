@@ -7,7 +7,11 @@
     .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    footer{
+        flex-direction: row;
+    }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .kontainer {
@@ -18,12 +22,18 @@
     .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    footer{
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .kontainer {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    footer{
+        flex-direction: column;
     }
 }
 
@@ -199,7 +209,6 @@
 footer {
     background-color: rgb(210, 180, 140);
     display: flex;
-    flex-direction: row; /* Stack elements horizontally */
     justify-content: space-between; /* Space between sections */
     padding: 20px; /* Padding inside footer */
     gap: 30px; /* Space between sections */
