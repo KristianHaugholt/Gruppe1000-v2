@@ -130,7 +130,7 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-2:checked + label ~ div > p{
+#pluss-toggle-2:checked + label ~ h2 + div > p{
     display: inline;
 }
 #pluss-toggle-2:checked + label ~ h2{
@@ -141,8 +141,8 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-3:checked + label + p{
-    display: inline-block;
+#pluss-toggle-3:checked + label + div > p{
+    display: block;
 }
 #pluss-toggle-3:checked + label > div{
     background-color: aqua;
