@@ -457,6 +457,7 @@ header {
     padding: 10px 0;
 }
 
+/* Activity-page-specific */
 
 /* Base grid styling */
 .image-grid {
@@ -481,6 +482,7 @@ header {
     align-items: center;
 }
 
+/* caption images */
 .image-caption {
     text-align: center;
     margin-top: 10px;
