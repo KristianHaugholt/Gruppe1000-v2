@@ -29,6 +29,9 @@
 .container-2 p{
     display: none;
 }
+.fet {
+    font-weight: bold;
+}
 .container-2 h2{
     display: none;
 }
