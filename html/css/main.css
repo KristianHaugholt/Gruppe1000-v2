@@ -334,6 +334,9 @@ header {
     align-items: center; /* Dentraliserer innhold horisontal */
     padding: 0; /* fjerner padding*/
 }
+.nav-open .sok{
+    display: none;
+}
 
 .nav-open .header-menu {
     display: flex;
