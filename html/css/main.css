@@ -469,18 +469,17 @@ header {
 .image-item img {
     width: 100%; /* Make images fill their grid cell */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 /* Add spacing between images */
 .image-item {
-    display: block;
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
 }
 
-/* Caption for images */
 .image-caption {
     text-align: center;
     margin-top: 10px;
