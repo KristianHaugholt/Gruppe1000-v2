@@ -39,43 +39,49 @@
 
 
     <footer>
-        <!--I have split the list inside "footer-left" into two lists because I am using the <hr> tag
-        as divider and I cant have the <hr> tag inside the <ul> tag because of accessibility -->
-        <div class="footer-left">
-            <ul>
-                <li>OSLO METROPOLITAN UNIVERSITY</li>
-                <li>STORBYUNIVERSITETET</li>
-            </ul>
-            <hr>
-            <ul>
-                <li>Postboks 4, St. Olavs plass</li>
-                <li>0130 Oslo</li>
-                <li>Tlf.: 67 23 50 00</li>
-                <li>
-                    <a href="/om/kontakt" class="a-link black">
-                        <span>Kontakt oss</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-middle">
-            <ul>
-                <!-- The <i> tags are getting icons from the <script> by fontawsome at the top-->
-                <li><a href="https://www.facebook.com/oslomet/"><i class="fa fa-facebook-official"></i>Facebook</a></li>
-                <li><a href="https://twitter.com/oslomet">X</a></li>
-                <li><a href="https://no.linkedin.com/school/oslomet/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-                </li>
-                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa fa-instagram"></i>Instagram</a></li>
-            </ul>
-        </div>
-        <div class="footer-right">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="github.html">Github</a></li>
-            </ul>
-        </div>
+        <!-- Section for general information -->
+        <section class="footer-info">
+            <h2>OsloMet</h2>
+            <p>OSLO METROPOLITAN UNIVERSITY</p>
+            <p>STORBYUNIVERSITETET</p>
+        </section>
+
+        <!-- Contact section -->
+        <section class="footer-contact">
+            <address>
+                <p>Postboks 4, St. Olavs plass</p>
+                <p>0130 Oslo</p>
+                <p>Phone: <a href="tel:+4767235000">67 23 50 00</a></p>
+                <p><a href="/om/kontakt" class="contact-link">Kontakt oss</a></p>
+            </address>
+        </section>
+
+        <!-- Social media links -->
+        <footer>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://www.facebook.com/oslomet/"><i class="fa fa-facebook-official"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/oslomet"><i class="fa fa-twitter"></i>X</a></li>
+                    <li><a href="https://no.linkedin.com/school/oslomet/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa fa-instagram"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <!-- Additional links -->
+        <section class="footer-links">
+            <h3>Quick Links</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="github.html">Github</a></li>
+                </ul>
+            </nav>
+        </section>
     </footer>
+
 
 </body>
 </html>

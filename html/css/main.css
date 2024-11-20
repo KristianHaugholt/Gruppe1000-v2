@@ -115,59 +115,97 @@
 
 
 
-/*-------Footer grid-------*/
+/*--------- Footer Layout with Flexbox --------*/
 footer {
-    background-color: rgb(0, 128, 128);
+    background-color: rgb(210, 180, 140);
+    display: flex;
+    flex-direction: row; /* Stack elements horizontally */
+    justify-content: space-between; /* Space between sections */
+    padding: 20px; /* Padding inside footer */
+    gap: 30px; /* Space between sections */
+    align-items: center; /* Align all sections on the same vertical line */
 }
 
-/*Removes dots from the list*/
+/* Left part (OSLOMET and Kontakt oss) */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+}
+
+/* Middle part (Quick links) */
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* Align links to the left */
+    border-left: 2px solid #333; /* Add vertical line separating sections */
+    padding-left: 20px;
+}
+
+/* Right part (Social media) */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 20px; /* Moves social media icons slightly to the left */
+    border-left: 2px solid #333; /* Add vertical line separating sections */
+}
+
+/* Social media links */
+footer .footer-social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .footer-social a {
+    font-size: 2rem;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; /* Blue underline on hover */
+}
+
+footer .footer-social a:hover {
+    color: #8B0000; /* Dark red on hover */
+    border-bottom: 2px solid #1E90FF; /* Blue underline when hovering */
+}
+
+/* Quick links styles */
+.footer-middle ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-middle a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Initial border */
+    padding: 5px 0;
+}
+
+.footer-middle a:hover {
+    border-bottom: 2px solid #1E90FF; /* Blue underline on hover */
+}
+
+/* Adjusting space for individual footer links */
 footer li {
     list-style-type: none;
-    padding: 14px;
-}
-footer a {
-    color: black;
+    padding: 8px 0;
 }
 
-/*makes the div take the space to the left in the grid
-and lie next to the others*/
-.footer-left {
-    grid-column: 1/2;
-    grid-row: 1;
 
-    display: table-cell;
-}
 
-/*Forces the divs under eachother when the windows is less
-than 800px wide*/
-@media (min-width: 800px) {
-    /*makes the div take the space in the middle of the grid
-    and lie next to the others*/
-    .footer-middle {
-        grid-column: 2/3;
-        grid-row: 1;
 
-        display: table-cell;
-    }
 
-    /*makes the div take the space to the right in the grid
-    and lie next to the others*/
-    .footer-right {
-        grid-column: 3/4;
-        grid-row: 1;
-
-        display: table-cell;
-    }
-
-    /*Defines the footer grid */
-    footer {
-        display: grid;
-        grid-template-columns: minmax(200px, 20vw) minmax(200px, 20vw) minmax(200px, 20vw) auto;
-        width: 100%;
-        display: table;
-        table-layout: fixed;
-        border-spacing: 20px;
-    }
-}
 
 
