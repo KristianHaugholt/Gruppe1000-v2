@@ -29,6 +29,10 @@
 .container-2 p{
     display: none;
 }
+.container-2 h2{
+    display: none;
+}
+
 .topp-del{
     width: 100%;
     height: 100px;
@@ -122,8 +126,11 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-2:checked + label + p{
-    display: inline-block;
+#pluss-toggle-2:checked + label ~ div > p{
+    display: inline;
+}
+#pluss-toggle-2:checked + label ~ h2{
+    display: block;
 }
 #pluss-toggle-2:checked + label > div{
     background-color: aqua;
