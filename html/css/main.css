@@ -40,10 +40,21 @@
     display: none;
 }
 
-.sok {
+.topp-del{
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(210, 180, 140) ;
+}
+.Sok-og-Meny{
     display: flex;
     flex-direction: row;
-    padding-right: 20%;
+}
+.logo2{
+    flex-basis: 30%;
+    flex-grow: 3;
+}
+.sok {
+    padding-right: 10px;
 }
 
 #sok-toggle{
@@ -62,6 +73,7 @@
     display: inline-block;
     background-image: url(../images/search-icon.svg);
     background-size: cover;
+    background-color: yellow;
     height: 30px;
     width: 30px;
 }
