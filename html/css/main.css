@@ -467,7 +467,14 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* Individual images */
+/* Individual image items */
+.image-item {
+    display: block; /* Ensures image and caption stack naturally */
+    text-align: center; /* Centers both image and caption */
+    margin-bottom: 20px; /* Adds spacing below each item */
+}
+
+/* Styling the images */
 .image-item img {
     width: 100%; /* Make images fill their grid cell */
     height: auto; /* Maintain aspect ratio */
@@ -475,20 +482,14 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-/* Add spacing between images */
-.image-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* caption images */
+/* Caption for images */
 .image-caption {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
     color: #555;
 }
+
 
 
 
