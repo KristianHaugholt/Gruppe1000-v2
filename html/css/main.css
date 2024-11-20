@@ -54,7 +54,9 @@
     flex-grow: 3;
 }
 .sok {
-    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 15%;
 }
 
 #sok-toggle{
