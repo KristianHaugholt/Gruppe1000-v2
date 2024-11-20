@@ -105,6 +105,8 @@
     display: inline-block;
     background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
     background-color: yellow;
+    background-position: 50%;
+    background-repeat: no-repeat;
     height: 30px;
     width: 30px;
 }
