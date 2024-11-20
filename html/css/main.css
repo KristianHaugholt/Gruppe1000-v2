@@ -141,8 +141,8 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-3:checked + label + p{
-    display: inline-block;
+#pluss-toggle-3:checked + label ~ p{
+    display: block;
 }
 #pluss-toggle-3:checked + label > div{
     background-color: aqua;
