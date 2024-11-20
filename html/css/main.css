@@ -247,6 +247,162 @@ footer li {
 
 
 
+/* Kopi fra annet prosjekt
+
+/* */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* */
+header {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 0.3s ease;
+    height: auto;
+    z-index: 999;
+}
+
+/* Menyen som vises når menyen er åpen */
+.header-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* Når menyen er åpen */
+.nav-open header {
+    height: 100vh;  /* Fyller hele skjermen */
+    flex-direction: column; /* Innholdet justeres vertikalt */
+    justify-content: flex-start;    /* Sentraliserer innholdet */
+    align-items: center;    /* Dentraliserer innhold horisontal */
+    padding: 0; /* fjerner padding*/
+}
+
+.nav-open .header-menu {
+    display: flex;
+}
+
+/* Påvirker utseendet til menyen som kommer når man trykker på burgermenyen */
+.header-menu a {
+    font-size: 2rem; /* størrelsen på skriften i menyen */
+    margin: 10px 0; /* Mellomrom mellom menyelementene */
+    color: rgba(250, 220, 20, 0.85); /* Fargen på skriften i menyen*/
+    text-decoration: none;
+    transition: color 0.3s; /* hvor fort skriften endrer farge ved mouse-over */
+}
+/* gjør at teksten endrer farge ved hover. kan ha den i .header-menu a? */
+.header-menu a:hover {
+    color: white;
+}
+
+/* påvirker alt som har med burgermeny og krysset å gjøre */
+.menu-container {
+    position: absolute; /* bestemmer posisjonen til knappen */
+    right: 1.5rem;  /* hvor langt fra høyre side */
+    top: 1.5rem;    /* hvor langt fra toppen */
+    z-index: 1001;  /* hvor langt "frem" på skjermen */
+}
+
+/* */
+.container {
+    position: absolute;
+    padding: 1.5rem;
+}
+
+/* påvirker også burgermenyen*/
+.menu-toggle {
+    position: absolute; /* påvirker posisjon */
+    right: 1.5rem;  /* påvirker hvor langt fra høyreside */
+    top: 49%;
+    transform: translate(0, -50%);
+    height: 26px;
+    width: 29px;   /* påvirker lengden på strekene i burgermenyen */
+
+    &, &:hover {
+        color: #842;
+    }
+}
+
+/* påvirker burgermenyen */
+.menu-toggle-bar {
+    display: block; /* om man setter til none blir menyen borte */
+    position: absolute; /* påvirker linjenes posisjon */
+    top: 50%;   /* påvirker plassering fra toppen, men også hvor man kan trykke for å treffe menyen */
+    margin-top: -1px;   /* påvirker hvor langt fra toppen */
+    right: 0;   /* påvirker hvor langt fra høyre */
+    width: 100%;    /* påvirker hvor bred menyen er, og hvor man kan trykke */
+    height: 4px;    /* påvirker hvor tjukke linjene er */
+    border-radius: 4px;
+    background-color: black;   /* påvirker fargen til burgermenyen */
+    transition: all 0.7s ease;  /* påvirker farten på animasjon*/
+
+    &.menu-toggle-bar--top {
+        transform: translate(0, -8px); /* påvirker hvor den øverste streken er */
+    }
+    &.menu-toggle-bar--middle {
+    }
+    &.menu-toggle-bar--bottom {
+        transform: translate(0, 8px);   /* påvirker hvor den underste streken er */
+    }
+
+    .nav-open & {
+        &.menu-toggle-bar--top {
+            transform: translate(0, 0) rotate(405deg);   /* påvirker hvor mange grader den øverste streken roterer */
+        }
+        &.menu-toggle-bar--middle {
+            opacity: 0;
+        }
+        &.menu-toggle-bar--bottom {
+            transform: translate(0, 0) rotate(-45deg);
+        }
+    }
+}
+
+/* påvirker logo */
+.logo img {
+    position: relative; /* påvirker posisjon. hvorfor relativ, og til hva? */
+    vertical-align: middle; /* om satt til top blir headeren litt kortere */
+    width: 50px;    /* både størrelsen på logoen, men også tykkelsen til headeren */
+    height: auto;
+    display: inline-block;
+}
+
+/* påvirker hovedoverskriftens utseende */
+.header-title {
+    position: relative; /* posisjonen til teksten. satt til absolute går den helt til venstre*/
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto; /* hvor mye marg rundt skriften. påvirker også størrelsen på headeren */
+    font-size: 24px;    /* størrelsen på skriften */
+}
+
+/* gjemmer tittel når klassen nav blir kalt */
+.nav-open .header-title {
+    display: none;
+}
+
+/* påvirker logen når klassen nav blir kalt */
+.nav-open .logo{
+    /* skrive inn noe her så logoen kommer på samme sted som før meny-klikk*/
+}
+
+.header-title h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
 
 
 
