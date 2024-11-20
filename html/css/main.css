@@ -175,5 +175,10 @@ than 800px wide*/
         border-spacing: 20px;
     }
 }
+/*-------------------------Accessebility Css--------------------------------*/
+.testScreenshot-text{
+    width: 100%;
+
+}
 
 
