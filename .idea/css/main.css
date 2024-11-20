@@ -103,6 +103,7 @@
 
 .pluss-icon{
     display: inline-block;
+    background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
     background-color: yellow;
     height: 30px;
     width: 30px;
