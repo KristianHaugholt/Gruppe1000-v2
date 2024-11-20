@@ -6,18 +6,33 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="topp-del">
-        <div class="Sok-og-Meny">
-            <div class="logo2">Oslomet</div>
-            <div class="sok">sok</div>
-            <input id="sok-toggle" type="checkbox">
-            <label class="sok-toggle-container" for="sok-toggle">
-                <div class="sok-icon"></div>
-            </label>
-            <input class="sok-bar" type="search">
-            <div class="meny">meny</div>
+    <header>
+        <!-- Logo-seksjon -->
+        <div class="logo">
+            <img src="images/studenter.png" alt="Logo">
         </div>
-    </div>
+
+        <!-- Tittel-seksjon -->
+        <div class="header-title">
+            <h1>Det var en gang en nettside</h1>
+        </div>
+
+        <!-- Burgermeny-knapp -->
+        <div class="menu-container">
+            <a id="menu-toggle" class="menu-toggle">
+                <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+            </a>
+        </div>
+
+        <nav class="header-menu">
+            <a href="index.html">Index</a>
+            <a href="activities.html">Activity</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="github.html">Github</a>
+        </nav>
+    </header>
     <div class="kontainer">
         <img src="images/studenter.png">
         <h1>Matematisk moddelering</h1>
@@ -119,4 +134,5 @@
 
 
 </body>
+<script src="scripts/scripts.js"></script>
 </html>
