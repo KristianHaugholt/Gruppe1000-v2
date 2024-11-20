@@ -29,7 +29,14 @@
 .container-2 p{
     display: none;
 }
+.fet {
+    font-weight: bold;
+}
 .container-2 h2{
+    display: none;
+}
+
+.container-2 ul{
     display: none;
 }
 
@@ -47,7 +54,9 @@
     flex-grow: 3;
 }
 .sok {
-    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 15%;
 }
 
 #sok-toggle{
@@ -66,7 +75,6 @@
     display: inline-block;
     background-image: url(../images/search-icon.svg);
     background-size: cover;
-    background-color: yellow;
     height: 30px;
     width: 30px;
 }
@@ -122,8 +130,11 @@
     height: 30px;
     width: 30px;
 }
-#pluss-toggle-1:checked + label + p{
-    display: inline-block;
+#pluss-toggle-1:checked + label + div > p{
+    display: block;
+}
+#pluss-toggle-1:checked + label + div > ul{
+    display: block;
 }
 #pluss-toggle-1:checked + label > div{
     background-color: aqua;
@@ -341,6 +352,7 @@ header {
 
 /* påvirker også burgermenyen*/
 .menu-toggle {
+    cursor: pointer;
     position: absolute; /* påvirker posisjon */
     right: 1.5rem;  /* påvirker hvor langt fra høyreside */
     top: 49%;
@@ -424,6 +436,10 @@ header {
     padding: 10px 0;
 }
 
+/* PacmanAtActivity */
+.pacmanActivity{
+
+}
 
 
 
