@@ -32,6 +32,20 @@
 .fet {
     font-weight: bold;
 }
+.info-tabell p span.stp {
+    margin-left: 5px;
+    color: #f2b400;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.info-tabell p span.fag-navn {
+    display: inline-block;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
 .container-2 h2{
     display: none;
 }
@@ -162,7 +176,7 @@
 
 
 
-/*--------- Footer Layout with Flexbox --------*/
+/*--------- Footer Layout with flexbox--------*/
 footer {
     background-color: rgb(210, 180, 140);
     display: flex;
