@@ -1,75 +1,87 @@
-@media screen and (min-width: 1024px){
-    .kontainer{
+@media screen and (min-width: 1024px) {
+    .kontainer {
         padding-right: 20%;
         padding-left: 20%;
     }
-    .info-tabell{
+
+    .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .kontainer{
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .kontainer {
         padding-right: 50px;
         padding-left: 50px;
     }
-    .info-tabell{
+
+    .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-@media screen and (max-width: 767px){
-    .kontainer{
+
+@media screen and (max-width: 767px) {
+    .kontainer {
         padding-right: 15px;
         padding-left: 15px;
     }
 }
-.container-2{
+
+.container-2 {
     padding-left: 20%;
     padding-right: 20%;
 }
-.container-2 p{
+
+.container-2 p {
     display: none;
 }
+
 .fet {
     font-weight: bold;
 }
-.container-2 h2{
+
+.container-2 h2 {
     display: none;
 }
 
-.container-2 ul{
+.container-2 ul {
     display: none;
 }
 
-.topp-del{
+.topp-del {
     width: 100%;
     height: 100px;
-    background-color:  rgb(210, 180, 140) ;
+    background-color: rgb(210, 180, 140);
 }
-.Sok-og-Meny{
+
+.Sok-og-Meny {
     display: flex;
     flex-direction: row;
 }
-.logo2{
+
+.logo2 {
     flex-basis: 30%;
     flex-grow: 3;
 }
+
 .sok {
     padding-right: 10px;
 }
 
-#sok-toggle{
+#sok-toggle {
     display: none;
 }
 
-.sok-toggle-container{
+.sok-toggle-container {
     display: block;
     cursor: pointer;
 }
-.sok-bar{
+
+.sok-bar {
     display: none;
 }
 
-.sok-icon{
+.sok-icon {
     display: inline-block;
     background-image: url(../images/search-icon.svg);
     background-size: cover;
@@ -78,49 +90,52 @@
     width: 30px;
 }
 
-#sok-toggle:checked ~ input{
+#sok-toggle:checked ~ input {
     display: inline;
 }
 
 
-.meny{
+.meny {
     flex-basis: 10%;
     flex-grow: 2;
 }
-.kontainer{
+
+.kontainer {
     margin-top: 30px;
 }
-.kontainer img{
+
+.kontainer img {
     width: 100%;
 }
 
-.info-tabell{
+.info-tabell {
     display: grid;
     gap: 10px 20px;
 }
-.info-tabell p{
+
+.info-tabell p {
     border-top: 1px solid black;
 }
 
 
-#pluss-toggle-1{
+#pluss-toggle-1 {
     display: none;
 }
 
-#pluss-toggle-2{
+#pluss-toggle-2 {
     display: none;
 }
 
-#pluss-toggle-3{
+#pluss-toggle-3 {
     display: none;
 }
 
-.pluss-toggle-container{
+.pluss-toggle-container {
     display: block;
     cursor: pointer;
 }
 
-.pluss-icon{
+.pluss-icon {
     display: inline-block;
     background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
     background-color: yellow;
@@ -129,37 +144,41 @@
     height: 30px;
     width: 30px;
 }
-#pluss-toggle-1:checked + label + div > p{
+
+#pluss-toggle-1:checked + label + div > p {
     display: block;
 }
-#pluss-toggle-1:checked + label + div > ul{
+
+#pluss-toggle-1:checked + label + div > ul {
     display: block;
 }
-#pluss-toggle-1:checked + label > div{
+
+#pluss-toggle-1:checked + label > div {
     background-color: aqua;
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-2:checked + label ~ h2 + div > p{
+#pluss-toggle-2:checked + label ~ h2 + div > p {
     display: inline;
 }
-#pluss-toggle-2:checked + label ~ h2{
+
+#pluss-toggle-2:checked + label ~ h2 {
     display: block;
 }
-#pluss-toggle-2:checked + label > div{
+
+#pluss-toggle-2:checked + label > div {
     background-color: aqua;
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-3:checked + label + div > p{
+#pluss-toggle-3:checked + label + div > p {
     display: block;
 }
-#pluss-toggle-3:checked + label > div{
+
+#pluss-toggle-3:checked + label > div {
     background-color: aqua;
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
-
-
 
 
 /*--------- Footer Layout with Flexbox --------*/
@@ -252,12 +271,12 @@ footer li {
 
 
 /*-------------------------Accessebility Css--------------------------------*/
-.testScreenshot-text{
+.testScreenshot-text {
     width: 100%;
 
 }
 
-.containerAccessebilityPage{
+.containerAccessebilityPage {
 
     padding-right: 25%;
     padding-left: 25%;
@@ -266,15 +285,12 @@ footer li {
 
 
 /*-----------------------------GitPage CSS------------------------------------------------------*/
-.containerGITPage{
+.containerGITPage {
     padding-right: 25%;
     padding-left: 25%;
     padding-top: 14px;
 
 }
-
-
-
 
 
 /* Kopi fra annet prosjekt
@@ -311,10 +327,10 @@ header {
 
 /* Når menyen er åpen */
 .nav-open header {
-    height: 100vh;  /* Fyller hele skjermen */
+    height: 100vh; /* Fyller hele skjermen */
     flex-direction: column; /* Innholdet justeres vertikalt */
-    justify-content: flex-start;    /* Sentraliserer innholdet */
-    align-items: center;    /* Dentraliserer innhold horisontal */
+    justify-content: flex-start; /* Sentraliserer innholdet */
+    align-items: center; /* Dentraliserer innhold horisontal */
     padding: 0; /* fjerner padding*/
 }
 
@@ -330,6 +346,7 @@ header {
     text-decoration: none;
     transition: color 0.3s; /* hvor fort skriften endrer farge ved mouse-over */
 }
+
 /* gjør at teksten endrer farge ved hover. kan ha den i .header-menu a? */
 .header-menu a:hover {
     color: white;
@@ -338,9 +355,9 @@ header {
 /* påvirker alt som har med burgermeny og krysset å gjøre */
 .menu-container {
     position: absolute; /* bestemmer posisjonen til knappen */
-    right: 1.5rem;  /* hvor langt fra høyre side */
-    top: 1.5rem;    /* hvor langt fra toppen */
-    z-index: 1001;  /* hvor langt "frem" på skjermen */
+    right: 1.5rem; /* hvor langt fra høyre side */
+    top: 1.5rem; /* hvor langt fra toppen */
+    z-index: 1001; /* hvor langt "frem" på skjermen */
 }
 
 /* */
@@ -353,11 +370,11 @@ header {
 .menu-toggle {
     cursor: pointer;
     position: absolute; /* påvirker posisjon */
-    right: 1.5rem;  /* påvirker hvor langt fra høyreside */
+    right: 1.5rem; /* påvirker hvor langt fra høyreside */
     top: 49%;
     transform: translate(0, -50%);
     height: 26px;
-    width: 29px;   /* påvirker lengden på strekene i burgermenyen */
+    width: 29px; /* påvirker lengden på strekene i burgermenyen */
 
     &, &:hover {
         color: #842;
@@ -368,31 +385,35 @@ header {
 .menu-toggle-bar {
     display: block; /* om man setter til none blir menyen borte */
     position: absolute; /* påvirker linjenes posisjon */
-    top: 50%;   /* påvirker plassering fra toppen, men også hvor man kan trykke for å treffe menyen */
-    margin-top: -1px;   /* påvirker hvor langt fra toppen */
-    right: 0;   /* påvirker hvor langt fra høyre */
-    width: 100%;    /* påvirker hvor bred menyen er, og hvor man kan trykke */
-    height: 4px;    /* påvirker hvor tjukke linjene er */
+    top: 50%; /* påvirker plassering fra toppen, men også hvor man kan trykke for å treffe menyen */
+    margin-top: -1px; /* påvirker hvor langt fra toppen */
+    right: 0; /* påvirker hvor langt fra høyre */
+    width: 100%; /* påvirker hvor bred menyen er, og hvor man kan trykke */
+    height: 4px; /* påvirker hvor tjukke linjene er */
     border-radius: 4px;
-    background-color: black;   /* påvirker fargen til burgermenyen */
-    transition: all 0.7s ease;  /* påvirker farten på animasjon*/
+    background-color: black; /* påvirker fargen til burgermenyen */
+    transition: all 0.7s ease; /* påvirker farten på animasjon*/
 
     &.menu-toggle-bar--top {
         transform: translate(0, -8px); /* påvirker hvor den øverste streken er */
     }
+
     &.menu-toggle-bar--middle {
     }
+
     &.menu-toggle-bar--bottom {
-        transform: translate(0, 8px);   /* påvirker hvor den underste streken er */
+        transform: translate(0, 8px); /* påvirker hvor den underste streken er */
     }
 
     .nav-open & {
         &.menu-toggle-bar--top {
-            transform: translate(0, 0) rotate(405deg);   /* påvirker hvor mange grader den øverste streken roterer */
+            transform: translate(0, 0) rotate(405deg); /* påvirker hvor mange grader den øverste streken roterer */
         }
+
         &.menu-toggle-bar--middle {
             opacity: 0;
         }
+
         &.menu-toggle-bar--bottom {
             transform: translate(0, 0) rotate(-45deg);
         }
@@ -403,7 +424,7 @@ header {
 .logo img {
     position: relative; /* påvirker posisjon. hvorfor relativ, og til hva? */
     vertical-align: middle; /* om satt til top blir headeren litt kortere */
-    width: 50px;    /* både størrelsen på logoen, men også tykkelsen til headeren */
+    width: 50px; /* både størrelsen på logoen, men også tykkelsen til headeren */
     height: auto;
     display: inline-block;
 }
@@ -415,7 +436,7 @@ header {
     vertical-align: middle;
     text-align: center;
     margin: 0 auto; /* hvor mye marg rundt skriften. påvirker også størrelsen på headeren */
-    font-size: 24px;    /* størrelsen på skriften */
+    font-size: 24px; /* størrelsen på skriften */
 }
 
 /* gjemmer tittel når klassen nav blir kalt */
@@ -424,7 +445,7 @@ header {
 }
 
 /* påvirker logen når klassen nav blir kalt */
-.nav-open .logo{
+.nav-open .logo {
     /* skrive inn noe her så logoen kommer på samme sted som før meny-klikk*/
 }
 
@@ -435,10 +456,38 @@ header {
     padding: 10px 0;
 }
 
-/* PacmanAtActivity */
-.pacmanActivity{
 
+/* Base grid styling */
+.image-grid {
+    display: grid;
+    gap: 20px; /* Adds spacing between grid items */
+    padding: 20px; /* Adds padding around the grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+/* Individual images */
+.image-item img {
+    width: 100%; /* Make images fill their grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Add spacing between images */
+.image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
 
 
 
