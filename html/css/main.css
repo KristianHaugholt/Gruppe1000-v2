@@ -242,13 +242,15 @@ footer li {
     list-style-type: none;
     padding: 8px 0;
 }
+
+
 /*-------------------------Accessebility Css--------------------------------*/
 .testScreenshot-text{
     width: 100%;
 
 }
 
-.containerACS{
+.containerAccessebilityPage{
 
     padding-right: 25%;
     padding-left: 25%;
@@ -256,7 +258,13 @@ footer li {
 }
 
 
+/*-----------------------------GitPage CSS------------------------------------------------------*/
+.containerGITPage{
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 14px;
 
+}
 
 
 
