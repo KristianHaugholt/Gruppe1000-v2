@@ -253,27 +253,32 @@ footer li {
 
 
 /*-------------------------Accessebility Css--------------------------------*/
-.testScreenshot-text{
-    width: 100%;
+/* Accessebility and Git page use the same padding as they are similar in structure and have similar contents*/
+.
+@media screen and (min-width: 1024px) {/*media screen adjusts the padding for diffrent screen sizes. This for example prevents mobile users from only seeing the padding  */
+    .containerAccessebilityGitPage {
 
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-top: 14px;
+    }
 }
+@media screen and (max-width: 768px) {/* adjust padding acording to screen size*/
+    .containerAccessebilityGitPage {
 
-.containerAccessebilityPage{
-
-    padding-right: 25%;
-    padding-left: 25%;
-    padding-top: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 6px;
+    }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .containerAccessebilityGitPage {
 
-
-/*-----------------------------GitPage CSS------------------------------------------------------*/
-.containerGITPage{
-    padding-right: 25%;
-    padding-left: 25%;
-    padding-top: 14px;
-
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
 }
-
 
 
 
