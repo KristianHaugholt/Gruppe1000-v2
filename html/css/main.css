@@ -92,7 +92,11 @@
 }
 
 
-#pluss-toggle{
+#pluss-toggle-1{
+    display: none;
+}
+
+#pluss-toggle-2{
     display: none;
 }
 
@@ -110,10 +114,18 @@
     height: 30px;
     width: 30px;
 }
-#pluss-toggle:checked ~ p{
+#pluss-toggle-1:checked + label + p{
     display: inline-block;
 }
-#pluss-toggle:checked + label > div{
+#pluss-toggle-1:checked + label > div{
+    background-color: aqua;
+    background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
+}
+
+#pluss-toggle-2:checked + label + p{
+    display: inline-block;
+}
+#pluss-toggle-2:checked + label > div{
     background-color: aqua;
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
