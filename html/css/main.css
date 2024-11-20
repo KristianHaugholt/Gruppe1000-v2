@@ -319,83 +319,8 @@ footer li {
 }
 
 
-/* Kopi fra annet prosjekt
+/* Burgermenu */
 
-/* */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* */
-header {
-    position: relative;
-    background-color: #f1f1f1;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: height 0.3s ease;
-    height: auto;
-    z-index: 999;
-}
-
-/* Menyen som vises når menyen er åpen */
-.header-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-
-/* Når menyen er åpen */
-.nav-open header {
-    height: 100vh; /* Fyller hele skjermen */
-    flex-direction: column; /* Innholdet justeres vertikalt */
-    justify-content: flex-start; /* Sentraliserer innholdet */
-    align-items: center; /* Dentraliserer innhold horisontal */
-    padding: 0; /* fjerner padding*/
-}
-.nav-open .sok{
-    display: none;
-}
-
-.nav-open .header-menu {
-    display: flex;
-}
-
-/* Påvirker utseendet til menyen som kommer når man trykker på burgermenyen */
-.header-menu a {
-    font-size: 2rem; /* størrelsen på skriften i menyen */
-    margin: 10px 0; /* Mellomrom mellom menyelementene */
-    color: rgba(250, 220, 20, 0.85); /* Fargen på skriften i menyen*/
-    text-decoration: none;
-    transition: color 0.3s; /* hvor fort skriften endrer farge ved mouse-over */
-}
-
-/* gjør at teksten endrer farge ved hover. kan ha den i .header-menu a? */
-.header-menu a:hover {
-    color: white;
-}
-
-/* påvirker alt som har med burgermeny og krysset å gjøre */
-.menu-container {
-    position: absolute; /* bestemmer posisjonen til knappen */
-    right: 1.5rem; /* hvor langt fra høyre side */
-    top: 1.5rem; /* hvor langt fra toppen */
-    z-index: 1001; /* hvor langt "frem" på skjermen */
-}
-
-/* */
-.container {
-    position: absolute;
-    padding: 1.5rem;
-}
-
-/* påvirker også burgermenyen*/
 .menu-toggle {
     cursor: pointer;
     position: absolute; /* påvirker posisjon */
@@ -410,7 +335,6 @@ header {
     }
 }
 
-/* påvirker burgermenyen */
 .menu-toggle-bar {
     display: block; /* om man setter til none blir menyen borte */
     position: absolute; /* påvirker linjenes posisjon */
@@ -449,43 +373,113 @@ header {
     }
 }
 
-/* påvirker logo */
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    position: relative; /* Position of theader */
+    background-color: #D2B48CFF; /* Color of header */
+    padding: 10px 20px; /* Padding */
+    display: flex;  /* Title in the middle */
+    /* justify-content: space-between; */
+    /* align-items: end; */
+    /* transition: height 0.3s ease; */
+    height: auto;   /* */
+    z-index: 999;   /* Behind burger-menu */
+}
+
+/* Open menu */
+.header-menu {
+    display: none; /* Hides choices in menu*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* Open menu */
+.nav-open header {
+    height: 100vh; /* Fills screen */
+    flex-direction: column; /* Content vertical */
+    justify-content: flex-start; /* Sentre */
+    align-items: center;
+    padding: 0; /* Removes padding */
+}
+.nav-open .sok{
+    display: none;
+}
+
+.nav-open .header-menu {
+    display: flex;
+}
+
+/* Aesthetics of the cover when menu is clicked */
+.header-menu a {
+    font-size: 2rem; /* Size of font in menu */
+    margin: 10px 0; /* Space between menu-elements */
+    color: rgba(221, 40, 47, 0.85); /* Color of the font*/
+    text-decoration: none;
+    transition: color 0.3s; /* At what speed the color changes on hover */
+}
+
+/* Changes color of text when hovering */
+.header-menu a:hover {
+    color: white;
+}
+
+/* Affects menu and cross burgermenu */
+.menu-container {
+    position: absolute; /* Position of the button */
+    right: 1.5rem; /* How far from the right side */
+    top: 1.5rem; /* How far from the top  */
+    z-index: 1001; /* How far towards the user */
+}
+
+/* */
+.container {
+    position: absolute;
+    padding: 1.5rem;
+}
+
+/* Affects the logo */
 .logo img {
-    position: relative; /* påvirker posisjon. hvorfor relativ, og til hva? */
-    vertical-align: middle; /* om satt til top blir headeren litt kortere */
-    width: 50px; /* både størrelsen på logoen, men også tykkelsen til headeren */
+    position: relative; /* Position */
+    vertical-align: middle;
+    width: 50px; /* Size of logo and by effect */
     height: auto;
     display: inline-block;
 }
 
-/* påvirker hovedoverskriftens utseende */
+/* Affects header title  */
 .header-title {
-    position: relative; /* posisjonen til teksten. satt til absolute går den helt til venstre*/
+    position: relative; /* Position of the text*/
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    margin: 0 auto; /* hvor mye marg rundt skriften. påvirker også størrelsen på headeren */
-    font-size: 24px; /* størrelsen på skriften */
+    margin: 0 auto; /* Margin around text, also size of header */
+    font-size: 24px; /* Size of text */
 }
 
-/* gjemmer tittel når klassen nav blir kalt */
+/* Hides title when class is called */
 .nav-open .header-title {
-    display: none;
+    display: block;
 }
 
-/* påvirker logen når klassen nav blir kalt */
-.nav-open .logo {
-    /* skrive inn noe her så logoen kommer på samme sted som før meny-klikk*/
-}
-
+/* Affects header title */
 .header-title h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
     padding: 10px 0;
 }
 
-/* Activity-page-specific */
+/* Activities-page-specific */
 
 /* Base grid styling */
 .image-grid {
@@ -497,7 +491,7 @@ header {
 
 /* Individual image items */
 .image-item {
-    display: block; /* Ensures image and caption stack naturally */
+    display: block; /*  */
     text-align: center; /* Centers both image and caption */
     margin-bottom: 20px; /* Adds spacing below each item */
 }
@@ -505,20 +499,28 @@ header {
 /* Styling the images */
 .image-item img {
     width: 100%; /* Make images fill their grid cell */
-    height: 200px; /* Maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    height: 200px;
+    object-fit: cover; /* comment */
+    border-radius: 10px; /* Rounded corner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Caption for images */
 .image-caption {
     text-align: center;
-    margin-top: 10px;
     font-size: 14px;
     color: #555;
+    line-height: 1.6;
+    margin: 10px 0 15px;
 }
 
+/* When hovering the image */
+.image-item img:hover {
+    transform: scale(1.05); /* Enlarge */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+
+}
 
 
 
