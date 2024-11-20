@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px){
-    .container{
+    .kontainer{
         padding-right: 20%;
         padding-left: 20%;
     }
@@ -8,7 +8,7 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .container{
+    .kontainer{
         padding-right: 50px;
         padding-left: 50px;
     }
@@ -17,7 +17,7 @@
     }
 }
 @media screen and (max-width: 767px){
-    .container{
+    .kontainer{
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -36,7 +36,7 @@
 .topp-del{
     width: 100%;
     height: 100px;
-    background-color: yellow;
+    background-color:  rgb(210, 180, 140) ;
 }
 .Sok-og-Meny{
     display: flex;
@@ -80,10 +80,10 @@
     flex-basis: 10%;
     flex-grow: 2;
 }
-.container{
+.kontainer{
     margin-top: 30px;
 }
-.container img{
+.kontainer img{
     width: 100%;
 }
 
@@ -130,7 +130,7 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-2:checked + label ~ div > p{
+#pluss-toggle-2:checked + label ~ h2 + div > p{
     display: inline;
 }
 #pluss-toggle-2:checked + label ~ h2{
@@ -141,8 +141,8 @@
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-3:checked + label + p{
-    display: inline-block;
+#pluss-toggle-3:checked + label + div > p{
+    display: block;
 }
 #pluss-toggle-3:checked + label > div{
     background-color: aqua;
@@ -244,6 +244,18 @@ footer li {
     width: 100%;
 
 }
+
+.containerACS{
+
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 14px;
+}
+
+
+
+
+
 
 
 

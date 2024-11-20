@@ -6,14 +6,36 @@
     <title>Acs Page</title>
 </head>
 <body>
-    <div class="topp-del">
-        <div class="Sok-og-Meny">
-            <div class="logo2">Oslomet</div>
-            <div class="sok">sok</div>
-            <div class="meny">meny</div>
+
+
+    <header>
+        <!-- Logo-seksjon -->
+        <div class="logo">
+            <img src="images/studenter.png" alt="Logo">
         </div>
-    </div>
-    <div class="container">
+
+        <!-- Tittel-seksjon -->
+        <div class="header-title">
+            <h1>Det var en gang en nettside</h1>
+        </div>
+
+        <!-- Burgermeny-knapp -->
+        <div class="menu-container">
+            <a id="menu-toggle" class="menu-toggle">
+                <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+            </a>
+        </div>
+
+        <nav class="header-menu">
+            <a href="index.html">Index</a>
+            <a href="activities.html">Activity</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="github.html">Github</a>
+        </nav>
+    </header>
+    <div class="containerACS">
         <div class="testScreenshot-text">
             <h1>What did we test? </h1>
                 <p>Lighthouse is an open-source, automated tool to help you improve the quality of web pages. You can run it on any web page,
@@ -78,4 +100,5 @@
 
 
 </body>
+<script src="scripts/scripts.js"></script>
 </html>
