@@ -113,6 +113,10 @@
 #pluss-toggle:checked ~ p{
     display: inline-block;
 }
+#pluss-toggle:checked + label > div{
+    background-color: aqua;
+    background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
+}
 
 
 
