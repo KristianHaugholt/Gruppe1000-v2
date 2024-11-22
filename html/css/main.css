@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) { /* ulike attributter basert på skjermbredde*/
     .kontainer {
         padding-right: 20%;
         padding-left: 20%;
@@ -42,13 +42,74 @@
     padding-right: 20%;
 }
 
-.container-2 p {
-    display: none;
-}
 
 .fet {
     font-weight: bold;
 }
+
+
+.container-2 p {    /*skjuler paragrafene fram til sjekkboks for dem trykkes*/
+    display: none;
+}
+
+.container-2 h2 {   /*skjuler h2 elementene fram til sjekkboks for dem trykkes*/
+    display: none;
+}
+
+.container-2 ul {   /*skjuler listene fram til sjekkboks for dem trykkes*/
+    display: none;
+}
+
+
+.sok {      /* boksen med søkesjekkboks og søkebar */
+    display: flex;
+    flex-direction: row;
+    padding-right: 15%;
+}
+
+#sok-toggle {   /* skjuler selve sjekkboksen */
+    display: none;
+}
+
+.sok-toggle-container { /* label for sjekkboksen */
+    display: block;
+    cursor: pointer;
+}
+
+.sok-bar {  /* skjuler søkebaren */
+    display: none;
+}
+
+.sok-icon {         /* søk ikon, samme som på oslomet siden */
+    display: inline-block;
+    background-image: url(../images/search-icon.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+#sok-toggle:checked ~ input {   /* når sjekkboksen sjekkes vises søkebaren */
+    display: inline;
+}
+
+
+.kontainer {
+    margin-top: 30px;
+}
+
+.kontainer img {    /* sørger for at bildet alltid fyller opp hele kontaineren */
+    width: 100%;
+}
+
+.info-tabell {      /* tabell som skal endre dimensjoner basert på skjermbredde */
+    display: grid;
+    gap: 10px 20px;
+}
+
+.info-tabell p {
+    border-top: 1px solid black;
+}
+
 .info-tabell p span.stp {
     margin-left: 5px;
     color: #f2b400;
@@ -63,103 +124,25 @@
     margin-right: 10px;
 }
 
-.container-2 h2 {
+
+#pluss-toggle-1 {   /* skjuler selve sjekkboksen */
     display: none;
 }
 
-.container-2 ul {
+#pluss-toggle-2 {   /* skjuler selve sjekkboksen */
     display: none;
 }
 
-.topp-del {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(210, 180, 140);
-}
-
-.Sok-og-Meny {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo2 {
-    flex-basis: 30%;
-    flex-grow: 3;
-}
-
-.sok {
-    display: flex;
-    flex-direction: row;
-    padding-right: 15%;
-}
-
-#sok-toggle {
+#pluss-toggle-3 {   /* skjuler selve sjekkboksen */
     display: none;
 }
 
-.sok-toggle-container {
+.pluss-toggle-container {   /* label for sjekkboksen */
     display: block;
     cursor: pointer;
 }
 
-.sok-bar {
-    display: none;
-}
-
-.sok-icon {
-    display: inline-block;
-    background-image: url(../images/search-icon.svg);
-    background-size: cover;
-    height: 30px;
-    width: 30px;
-}
-
-#sok-toggle:checked ~ input {
-    display: inline;
-}
-
-
-.meny {
-    flex-basis: 10%;
-    flex-grow: 2;
-}
-
-.kontainer {
-    margin-top: 30px;
-}
-
-.kontainer img {
-    width: 100%;
-}
-
-.info-tabell {
-    display: grid;
-    gap: 10px 20px;
-}
-
-.info-tabell p {
-    border-top: 1px solid black;
-}
-
-
-#pluss-toggle-1 {
-    display: none;
-}
-
-#pluss-toggle-2 {
-    display: none;
-}
-
-#pluss-toggle-3 {
-    display: none;
-}
-
-.pluss-toggle-container {
-    display: block;
-    cursor: pointer;
-}
-
-.pluss-icon {
+.pluss-icon {   /* pluss ikon, samme som på oslomet siden */
     display: inline-block;
     background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
     background-color: yellow;
@@ -169,38 +152,36 @@
     width: 30px;
 }
 
-#pluss-toggle-1:checked + label + div > p {
+#pluss-toggle-1:checked + label + div > p { /* når sjekkboksen sjekkes vises alle paragrafene inne i første div etter sjekkboksen */
     display: block;
 }
 
-#pluss-toggle-1:checked + label + div > ul {
+#pluss-toggle-1:checked + label + div > ul {    /* når sjekkboksen sjekkes vises listene inne i første div etter sjekkboksen */
     display: block;
 }
 
-#pluss-toggle-1:checked + label > div {
-    background-color: aqua;
+#pluss-toggle-1:checked + label > div { /* endrer fra et pluss ikon til minus ikon slik som på oslomet siden */
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-2:checked + label ~ h2 + div > p {
-    display: inline;
-}
-
-#pluss-toggle-2:checked + label ~ h2 {
+#pluss-toggle-2:checked + label ~ h2 + div > p {    /* når sjekkboksen sjekkes skal alle paragrafene som er i en boks (info-tabell)
+                                                        etter et h2 element vises*/
     display: block;
 }
 
-#pluss-toggle-2:checked + label > div {
-    background-color: aqua;
+#pluss-toggle-2:checked + label ~ h2 {  /* når sjekkboksen sjekkes vises alle h2 elementene */
+    display: block;
+}
+
+#pluss-toggle-2:checked + label > div { /* endrer fra et pluss ikon til minus ikon slik som på oslomet siden */
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
-#pluss-toggle-3:checked + label + div > p {
+#pluss-toggle-3:checked + label + div > p { /* når sjekkboksen sjekkes vises alle paragrafene inne i første div etter sjekkboksen */
     display: block;
 }
 
-#pluss-toggle-3:checked + label > div {
-    background-color: aqua;
+#pluss-toggle-3:checked + label > div { /* endrer fra et pluss ikon til minus ikon slik som på oslomet siden */
     background-image: url("https://www.oslomet.no/build/images/minus-icon.svg");
 }
 
