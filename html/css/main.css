@@ -7,9 +7,6 @@
     .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    footer{
-        flex-direction: row;
-    }
 }
 
 
@@ -22,18 +19,12 @@
     .info-tabell {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    footer{
-        flex-direction: row;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .kontainer {
         padding-right: 15px;
         padding-left: 15px;
-    }
-    footer{
-        flex-direction: column;
     }
 }
 
@@ -189,9 +180,20 @@
 
 
 /*--------- Footer Layout with Flexbox --------*/
+@media screen and (min-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-contact{
+        padding-top: 10px;
+    }
+}
+
 footer {
     background-color: rgb(210, 180, 140);
-    display: flex;
     justify-content: space-between; /* Space between sections */
     padding: 20px; /* Padding inside footer */
     gap: 30px; /* Space between sections */
