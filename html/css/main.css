@@ -144,7 +144,7 @@ venstre, gul farge, mindre skriftstørrelse (80 %), og plasserer teksten litt h�
 .pluss-icon {   /* pluss ikon, samme som på oslomet siden */
     display: inline-block;
     background-image: url("https://www.oslomet.no/build/images/plus-icon.svg");
-    background-color: yellow;
+    background-color: aquamarine;
     background-position: 50%;
     background-repeat: no-repeat;
     height: 30px;
