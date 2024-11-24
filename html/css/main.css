@@ -185,6 +185,10 @@
         display: flex;
         flex-direction: row;
     }
+    .footer-social{
+        padding-left: 20px; /* Moves social media icons slightly to the left */
+        border-left: 2px solid #333; /* Add vertical line separating sections */
+    }
 }
 @media screen and (max-width: 767px) {
     .footer-contact{
@@ -223,8 +227,6 @@ footer {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
-    padding-left: 20px; /* Moves social media icons slightly to the left */
-    border-left: 2px solid #333; /* Add vertical line separating sections */
 }
 
 /* Social media links */
@@ -302,6 +304,9 @@ footer li {
         padding-top: 16px;
     }
 }
+
+
+
 
 
 /* Burgermenu */
