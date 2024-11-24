@@ -1,10 +1,12 @@
-@media screen and (min-width: 1024px) { /* ulike attributter basert på skjermbredde*/
-    .kontainer {
+/**/
+
+@media screen and (min-width: 1024px) { /* ulike attributter basert på skjermbredde */
+    .kontainer {            /* ulik padding med forskjellig skjermbredde */
         padding-right: 20%;
         padding-left: 20%;
     }
 
-    .info-tabell {
+    .info-tabell {      /* fire kolonner med bred skjerm */
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
@@ -27,6 +29,7 @@
         padding-left: 15px;
     }
 }
+
 
 .container-2 {
     padding-left: 20%;
