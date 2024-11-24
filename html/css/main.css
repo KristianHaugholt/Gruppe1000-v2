@@ -1,4 +1,12 @@
-/**/
+/*  Index relevant linje 11-195
+    Footer relevant linje 198-296
+    Accessibility og Github relevant linje 299-322
+    burger meny relevant linje 325-377
+    body relevant linje 378-383
+    header relevant linje 386-482
+    bildeoppsett relevant linje 485-526
+
+ */
 
 @media screen and (min-width: 1024px) { /* ulike attributter basert på skjermbredde */
     .kontainer {            /* ulik padding med forskjellig skjermbredde */
@@ -28,6 +36,15 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+}
+
+.kontainer {
+    margin-top: 30px;
+}
+
+.kontainer img {    /* sørger for at bildet alltid fyller opp hele kontaineren */
+    width: 100%;
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* søk elementet*/
@@ -89,16 +106,6 @@
     display: none;
 }
 
-
-.kontainer {
-    margin-top: 30px;
-}
-
-.kontainer img {    /* sørger for at bildet alltid fyller opp hele kontaineren */
-    width: 100%;
-    border-radius: 8px; /* Rounded corners */
-}
-
 .info-tabell {      /* tabell som skal endre dimensjoner basert på skjermbredde */
     display: grid;
     gap: 10px 20px;
@@ -125,6 +132,7 @@ venstre, gul farge, mindre skriftstørrelse (80 %), og plasserer teksten litt h�
     margin-right: 10px;
 }
 
+/* sjekkbokser som kollapser elementer */
 
 #pluss-toggle-1 {   /* skjuler selve sjekkboksen */
     display: none;
@@ -288,7 +296,7 @@ footer li {
 }
 
 
-/*-------------------------Accessebility Css--------------------------------*/
+/*-------------------------Accessebility og Githbub Css--------------------------------*/
 /* media screen adjusts the padding. This for example prevents mobile useres from just seeing padding */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .containerAccessebilityGitPage{
@@ -375,7 +383,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* Header           */
 header {
     position: relative; /* Position of theader */
     background-color: #D2B48CFF; /* Color of header */
@@ -473,7 +481,7 @@ header {
     padding: 10px 0;
 }
 
-/* Activities-page-specific */
+/* Image-structure-specific */
 
 /* Base grid styling */
 .image-grid {
