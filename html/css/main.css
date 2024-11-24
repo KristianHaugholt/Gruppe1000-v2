@@ -502,12 +502,12 @@ header {
 .image-item img {
     width: 100%; /* Make images fill their grid cell */
     height: 200px;
-    object-fit: cover; /* comment */
     border-radius: 10px; /* Rounded corner */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: zoom-in;
 }
+
 
 /* Caption for images */
 .image-caption {
