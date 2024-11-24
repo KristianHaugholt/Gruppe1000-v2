@@ -99,18 +99,21 @@
     gap: 10px 20px;
 }
 
-.info-tabell p {
+.info-tabell p {/*Legger en svart linje øverst på hvert avsnitt (p) i elementet med klassen .info-tabell.*/
     border-top: 1px solid black;
 }
 
-.info-tabell p span.stp {
+.info-tabell p span.stp {/*Gir elementer med klassen stp (inne i p) en margin til
+venstre, gul farge, mindre skriftstørrelse (80 %), og plasserer teksten litt høyere.
+*/
     margin-left: 5px;
     color: #f2b400;
     font-size: 0.8em;
     vertical-align: super;
 }
 
-.info-tabell p span.fag-navn {
+.info-tabell p span.fag-navn {/*Viser elementer med klassen fag-navn som inline-blokker,
+ gir dem en gul linje under, litt ekstra avstand nederst og til høyre.*/
     display: inline-block;
     border-bottom: 3px solid yellow;
     padding-bottom: 5px;
